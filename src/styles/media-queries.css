@@ -1,0 +1,18 @@
+@media screen and (max-width:1440px){
+    header{
+        width: 98.7vw;
+
+        & .header-content{
+            width: 73%;
+        }
+    }
+    section.topic{
+        width: 98.7vw;
+    }
+    section.tool-bar{
+        width: 98.7vw;
+    }
+    main{
+        width: 98.7vw;
+    }
+}
