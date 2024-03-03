@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+*{
+    font-family: 'Nanum-Gothic-Coding', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    height: 47px;
+    background-color: #feca21;
+    display: flex;
+    justify-content: center;
+    
+    & .header-content{
+        width: 71%;
+        height: 100%;
+        display: flex;
+        
+        & .header-text{
+            width: 64%;
+            display: flex;
+            align-items: center;
+
+            & h2{
+                font-size: 17.5px;
+                color: var(--gartic-dark-blue);
+
+                & b{
+                    font-weight: bold;
+                }
+            }
+        }
+        & .gartic-io{
+            display: flex;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+
+            & img{
+                width: 24%;
+                margin-right: 7.5%;
+            }
+            & h2{
+                color: white;
+                font-size: 21px;
+                text-shadow: var(--text-shadow);
+            }
+        }
+        & .header-button{
+            width: 14%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            & button{
+                border-radius: 20px;
+                background-color: var(--gartic-light-blue);
+                border: 3px solid var(--gartic-dark-blue);
+                width: 85%;
+                height: 80%;
+                color: white;
+                text-shadow: var(--text-shadow);
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+section.topic{
+    background-image: url(../images/background-header.png);
+    background-position-x: 30%;
+    width: 10vw;
+    height: 117px;
+
+    & .gartic-logo{
+        width: 16%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 13.5%;
+
+        & img{
+            width: 93%;
+        }
+    }
+}
+
+section.tool-bar{
+    background-image: linear-gradient(to bottom, #007cbc 0, #004f96 90%);
+    width: 100vw;
+    height: 45px;
+    box-shadow: 1px -0.5px 3px var(--gartic-dark-blue);
+    
+    & .tool-bar-content{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        margin-left: 14.5%;
+        justify-content: space-between;
+
+        & .tools{
+            height: 100%;
+            width: 68%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            & h3{
+                font-size: 11.5px;
+                color: white;
+            }
+            & .item{
+                padding: 6px 18.5px 6px 18.5px;
+                border-left: 0.5px solid var(--gartic-dark-blue);
+                cursor: pointer;
+
+                &:hover h3{
+                    color: #feca21;
+                }
+                &.lupa{
+                    border-right: 0.5px solid var(--gartic-dark-blue);
+                }
+            }
+        }
+        & .contacts{
+            width: 27%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            & .contact-card{
+                height: 100%;
+                width: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                &:hover{
+                    background-image: linear-gradient(to top,#007fe7, #0176d6);
+                }
+                & h3{
+                    color: #feca21;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+main{
+    background-color: #e8e8e8;
+    background-image: url(../images/fundo-gartic.png);
+    width: 100vw;
+    height: 1900px;
+    display: flex;
+    justify-content: center;
+
+    & .main-content{
+        width: 72%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        & .first-column{
+            width: 68%;
+            height: 100%;
+        }
+        & .second-column{
+            width: 30%;
+            height: 100%;
+        }
+        & .main-box{
+            margin-top: 22px;
+            background-color: #f7f7f7;
+            width: 100%;
+            height: 300px;
+
+            & .header-main-box{
+                display: flex;
+                width: 39pc;
+                height: 35px;
+                justify-content: space-between;
+                background-image: linear-gradient(#1f90d7 50%, #1e77cf 50%);
+                border-radius: 5px;
+                position: absolute;
+                top: 34.7%;
+                left: 15.3%;
+
+                & .title{
+                    height: 100%;
+                    width: 26%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & h4{
+                        color: white;
+                        font-size: 19px;
+                    }
+                }
+                & .players{
+                    height: 100%;
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    & .people-group{
+                        height: 100%;
+                        width: 18%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & img{
+                            width: 68%;
+                        }
+                    }
+                    & .numbers{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 50%;
+                        height: 100%;
+
+                        & .number{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #00468B;
+                            border-radius: 5px;
+                            height: 70%;
+                            width: 18%;
+
+                            & h4{
+                                color: white;
+                            }
+                        }
+                    }
+                    & .playing-now{
+                        height: 100%;
+                        width: 45%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & h4{
+                            font-size: 12px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
