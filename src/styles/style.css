@@ -70,7 +70,7 @@ header{
 section.topic{
     background-image: url(../images/background-header.png);
     background-position-x: 30%;
-    width: 10vw;
+    width: 100vw;
     height: 117px;
 
     & .gartic-logo{
@@ -173,20 +173,27 @@ main{
         }
         & .main-box{
             margin-top: 22px;
-            background-color: #f7f7f7;
+            background-color: #f4f4f4;
             width: 100%;
             height: 300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 1px 1px 10px gray;
+            border-radius: 7px;
 
             & .header-main-box{
                 display: flex;
-                width: 39pc;
-                height: 35px;
+                width: 100%;
+                height: 36px;
                 justify-content: space-between;
                 background-image: linear-gradient(#1f90d7 50%, #1e77cf 50%);
                 border-radius: 5px;
+                box-shadow: 1px 1px 10px gray;
+                /* margin: 0 0 0 2.6%;
                 position: absolute;
-                top: 34.7%;
-                left: 15.3%;
+                top: 34.7vh;
+                left: 15.3vw; */
 
                 & .title{
                     height: 100%;
@@ -249,6 +256,178 @@ main{
                         & h4{
                             font-size: 12px;
                             color: white;
+                        }
+                    }
+                }
+            }
+            & .content-main-box{
+                margin-top: 12px;
+                width: 94%;
+                height: 60%;
+
+                & .header-content-main-box{
+                    width: 100%;
+                    height: 17%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    & .forms{
+                        width: 71%;
+                        height: 95%;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        & .forms-content{
+                            border-radius: 3px;
+                            background-color: white;
+                            border: 1px solid gray;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            width: 49%;
+    
+                            & .fa-solid{
+                                color: #aaa9a9;
+                                margin-right: 7px;
+                            }
+                            & .input{
+                                background-color: transparent;
+                                border: none;
+                                width: 85%;
+                                height: 75%;
+                                font-style: italic;
+    
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                    & .rooms-button{
+                        width: 29%;
+                        height: 120%;
+                        display: flex;
+                        margin-left: 12px;
+                        justify-content: space-between;
+                        cursor: pointer;
+
+                        & .room-button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 10px 10px 0 0;
+                            background-image: linear-gradient(#fff 40%, #b2b2b2);
+                            width: 50.5%;
+                            height: 100%;
+
+                            & h5{
+                                color: rgb(27, 27, 27);
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                & .rooms-box{
+                    border-radius: 3px 0 0 0;
+                    border-top: 10px solid #b2b2b2;
+                    margin-top: 5.5px;
+                    width: 100%;
+                    height: 83%;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar{
+                        width: 10px;
+                        background-color: #b2b2b2;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        border-radius: 10px;
+                        background-color: #e2e2e2;
+                    }
+                    & .rooms-boxes{
+                        width: 100%;
+                        height: 100%;
+                        
+                        & .box-line{
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+
+                            & .room-card{
+                                cursor: pointer;
+                                border: 1px solid #b1b0b0;
+                                background-image: linear-gradient(#fafafa 5%, #b2b2b2);
+                                padding: 0 10px 0 10px;
+                                width: 85.5%;
+                                height: 38px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                &:hover{
+                                    background-color: #239cff5e;
+                                    background-image: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttons-main-box{
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 21%;
+
+                    .buttons-main-box-content{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        & .gray-buttons{
+                            height: 100%;
+                            width: 54%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            & button{
+                                background-image: linear-gradient(to bottom, #fafafa 50%, #c7c7c7);
+                                border: 1px solid #b2b2b2;
+                                border-radius: 3px;
+                                width: 32.5%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-around;
+                                align-items: center;
+                                cursor: pointer;
+                                color: #414141;
+                                font-weight: bolder;
+                                font-size: 14px;
+
+                                & .fa-solid{
+                                    color: rgb(161, 161, 161)
+                                }
+                                &:hover{
+                                    background-image: linear-gradient(to bottom, #fafafa 50%, #dddddd);
+                                }
+                            }
+                        }
+                        & .orange-button{
+                            background-color: yellow;
+                            width: 40%;
+                            display: flex;
+                            justify-content: center;
+
+                            & button{
+                                cursor: pointer;
+                                background: linear-gradient(to bottom, #ffbb0f, #ff9009 70%);
+                                width: 100%;
+                                color: #6d3e04;
+                                border: 1px solid #e28208;
+                                font-size: 25px;
+
+                                &:hover{
+                                    background-image: linear-gradient(to bottom, #fabd23, #ff9009 80%);
+                                }
+                            }
                         }
                     }
                 }
