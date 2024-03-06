@@ -1215,20 +1215,12 @@ footer{
             justify-content: space-between;
             align-items: center;
 
-            & .faixa{
-                left: 30.3vw;
-                top: 2222px;
-                width: 78px;
-                height: 79px;
-                position: absolute;
-                background-image: url(../images/spriteRodape.png);
-            }
             & .card{
                 box-shadow: 0 1px 0 #59abe4;
                 border-radius: 7px;
                 border: 1px solid #004979;
                 background: linear-gradient(to bottom, #006bb2 0, #005d9b 100%);
-                width: 32%;
+                width: 33%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
@@ -1286,6 +1278,296 @@ footer{
                                 font-size: 12px;
                             }
                         }
+                    }
+                }
+                &.twitter-card{
+                    box-shadow: 0px 1px 0 #59abe4, inset 0 1px 0 #599fcd;
+
+                    & .twitter-card-content{
+                        border-radius: 5px;
+                        box-shadow: 0px 1px 0 #59abe4;
+                        border: 1px solid #004979;
+                        background-color: #0061a2;
+                        width: 93%;
+                        height: 93%;
+
+
+                    }
+                }
+                &.instagram-card{
+                    width: 30%;
+                    flex-direction: column;
+                    box-shadow: 0px 1px 0 #59abe4, inset 0 1px 0 #599fcd;
+
+                    & .instagram-card-content{
+                        border-radius: 5px;
+                        box-shadow: 0px 1px 0 #59abe4;
+                        border: 1px solid #004979;
+                        background-color: #0061a2;
+                        width: 94%;
+                        height: 78%;
+                    }
+                    & .instagram-card-description{
+                        width: 94%;
+                        height: 40px;                        
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: start;
+
+                        & img{
+                            height: 90%;
+                            box-shadow: 0px 1px 0 #59abe4;
+                            border: 1px solid #004979;
+                            margin-right: 10px;
+                        }
+                        & h6{
+                            color: white;
+                            font-weight: bolder;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            & .faixa{
+                left: 31.1vw;
+                top: 2222px;
+                width: 78px;
+                height: 79px;
+                position: absolute;
+                background-image: url(../images/spriteRodape.png);
+            }
+            & .faixa-twitter{
+                left: 58vw;
+                top: 2222px;
+                width: 78px;
+                height: 79px;
+                background-position: -100px 0px;
+                position: absolute;
+                background-image: url(../images/spriteRodape.png);
+            }
+            & .faixa-instagram{
+                left: 82.6vw;
+                top: 2222px;
+                width: 78px;
+                height: 79px;
+                background-position: -200px 0px;
+                position: absolute;
+                background-image: url(../images/spriteRodape.png);
+            }
+        }
+    }
+    & .footer-news{
+        margin-top: 35px;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+
+        & .footer-news-content{
+            width: 78%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            & .news{
+                border-radius: 5px;
+                box-shadow: 0px 1px 0 #59abe4;
+                border: 1px solid #004979;
+                background-color: #0061a2;
+                width: 68.2%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & .main-message{
+                    width: 36%;
+                    height: 75%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    & h6{
+                        color: white;
+                        font-size: 19px;
+                        line-height: 1.7rem;
+
+                        & b{
+                            color: #fc0;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                & .description{
+                    margin: 4px 12px 0 0;
+                    width: 58%;
+                    height: 78%;
+
+                    & h6{
+                        color: white;
+                        font-size: 12px;
+
+                        & b{
+                            color: #fc0;
+
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            & .play-too{
+                border-radius: 5px;
+                box-shadow: 0px 1px 0 #59abe4;
+                border: 1px solid #004979;
+                background-color: #0061a2;
+                width: 30%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & .play-too-content{
+                    width: 81%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    & .title{
+                        margin-top: 3px;
+                        width: 100%;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        & h6{
+                            color: #fc0;
+                            font-size: 20px;
+                        }
+                    }
+                    & .icons{
+                        margin-top: 8px;
+                        width: 104%;
+                        height: 45px;
+                        background-image: url(../images/spriteRodape.png);
+                        background-position: -55px -95px;
+                    }
+                }
+            }
+            & .faixa-news{
+                left: 58.3vw;
+                top: 2588px;
+                width: 78px;
+                height: 79px;
+                background-position: -300px 0px;
+                position: absolute;
+                background-image: url(../images/spriteRodape.png);
+            }
+        }
+    }
+    & .footer-final-message{
+        width: 100%;
+        height: 70px;
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+
+        & .footer-final-message-content{
+            width: 78%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            & .footer-gartic-contacts{
+                width: 25%;
+                height: 100%;
+
+                & .gartic-domain{
+                    width: 100%;
+                    height: 16px;
+
+                    & h6{
+                        color: white;
+                        font-size: 15px;
+                    }
+                }
+                & .gartic-contacts{
+                    width: 100%;
+                    height: 18px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    & h6{
+                        font-size: 13px;
+                        color: white;
+
+                        &#contact{
+                            padding-right: 19px;
+                        }
+                        &#rules{
+                            padding: 0 19px 0 19px;
+                            border: 2px solid white;
+                            border-top: none;
+                            border-bottom: none;
+                        }
+                        &#privacy{
+                            padding-left: 19px;
+                        }
+                    }
+                }
+                & .gartic-recommended{
+                    width: 100%;
+                    height: 15px;
+                    margin-top: 10px;
+
+                    & h6{
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+            & .footer-gartic-technologies{
+                width: 25%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                & .html-icon{
+                    width: 31%;
+                    height: 100%;
+                    border-right: 1px solid rgba(255, 255, 255, 0.582);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    & h6{
+                        font-size: 10px;
+                        color: white;
+                        margin: 1px 7px 15px 0;
+                    }
+                    & img{
+                        width: 50%;
+                        margin-right: 7px;
+                    }
+                }
+                & .onrizon-logo{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    & h6{
+                        color: white;
+                    }
+                    & img{
+                        width: 75%;
                     }
                 }
             }
